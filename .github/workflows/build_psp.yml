@@ -42,8 +42,8 @@ jobs:
       - uses: ./.github/actions/upload_build
         if: ${{ always() && steps.compile.outcome == 'success' }}
         with:
-          SOURCE_FILE: 'ClassiCube-psp.elf'
-          DEST_NAME: 'ClassiCube-psp.elf'
+          SOURCE_FILE: 'test-psp.elf'
+          DEST_NAME: 'test-psp.elf'
           
           
       - uses: ./.github/actions/notify_success
